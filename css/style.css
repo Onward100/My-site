@@ -90,9 +90,9 @@ html {
 }
 
 .button button {
-    background-color: rgb(247, 247, 36);
+    background-color: transparent;
     padding: 8px;
-    border: none;
+    border: 2px solid rgb(138, 138, 27);
     border-radius: 10px;
     transition: .4s ease;
     color: white;
