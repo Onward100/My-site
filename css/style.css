@@ -1,0 +1,408 @@
+body {
+    font-family: 'Bai Jamjuree, poppins';
+    background-color: #033f47;
+    color: #b6cbce;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-brand h3 {
+    color: rgb(247, 247, 36) !important;
+}
+
+.hero-text span {
+    color: rgb(247, 247, 36);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+.navbar {
+    background-color: rgb(15, 113, 126);
+}
+
+.navbar .nav-link {
+    text-transform: uppercase;
+    color: white !important;
+    transition: .4s ease;
+}
+
+.nav-link:hover {
+    color: rgb(185, 185, 17) !important;
+}
+
+.navbar .nav-link.active {
+    color: rgb(185, 185, 17) !important;
+}
+
+.home-img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid rgb(185, 185, 17);
+}
+
+.row2 {
+    margin-top: 20px;
+}
+
+.work-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.cards {
+    transition: .4s ease;
+    margin-left: 15px;
+}
+
+.cards:hover .work-image {
+    transform: scale(.98);
+}
+
+.cards-text {
+    background-color: rgb(15, 113, 126);
+    width: 300px;
+    border-radius: 0 0 10px 10px !important;
+}
+
+.button button {
+    background-color: rgb(247, 247, 36);
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    transition: .4s ease;
+    color: white;
+    opacity: .7;
+}
+
+.button button:hover {
+    background-color: rgb(138, 138, 27);
+    opacity: 1;
+}
+
+.number {
+    position: relative;
+    font-weight: 700px;
+    text-decoration: none;
+    color: white;
+    opacity: .8;
+    transition: .4s ease;
+}
+
+.number::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(209, 209, 38);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: .4s ease;
+    border-bottom: 2px solid rgb(209, 209, 38);
+}
+
+.number:hover {
+    width: 100%;
+    color: rgb(209, 209, 38);
+}
+
+.text-brand {
+    color: rgb(209, 209, 38);
+}
+
+.background {
+    background-color: rgb(15, 113, 126);
+    width: 100%;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+
+.background:hover {
+    box-shadow: -6px 6px 0 0 rgb(209, 209, 38);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: rgb(209, 209, 38);
+    border-radius: 8px;
+    color: white;
+}
+
+.image-prove img {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 2000px;
+    border: 2px solid rgb(209, 209, 38);
+}
+
+/* contact */
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 35px;
+    margin: 15px;
+}
+
+.name {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.name i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+
+.name input {
+    width: 100%;
+    padding: 20px 45px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(15, 113, 126);
+    border-radius: 10px;
+}
+
+.name input::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.email {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.email i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+
+.email input {
+    width: 100%;
+    padding: 20px 45px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(15, 113, 126);
+    border-radius: 10px;
+}
+
+.email input::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.message-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.message-box i {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+
+.message-box textarea {
+    width: 100%;
+    padding: 20px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(15, 113, 126);
+    border-radius: 10px;
+}
+
+.message-box textarea::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.contact .button {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.contact .button button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: yellow;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.message {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.message .success {
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+.message .danger {
+    font-size: 20px;
+    color: yellow;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+@keyframes buttons {
+    0% {
+        transform: scale(0.1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* contact */
+#services .hero-head {
+    margin-left: 0;
+}
+
+#services .hero-head2 {
+    margin-left: 0;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 113, 126);
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 100px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.social-icons a:hover {
+    background-color: rgb(209, 209, 38);
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: 30%;
+        background: linear-gradient(rgb(15, 113, 126), rgb(15, 113, 126)), url(about.JPG);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .background {
+        width: 300px;
+    }
+
+    #content-wrapper {
+        margin-left: 430px;
+    }
+
+    .hero {
+        width: 600px;
+    }
+
+    #home {
+        margin-top: 40px;
+    }
+
+    .row2 {
+        margin-left: 380px;
+        margin-top: -251px;
+    }
+
+    .row2 h5 {
+        width: 400px;
+    }
+
+    .service p {
+        width: 280px;
+    }
+
+    #services .hero-head2 {
+        margin-left: 400px;
+    }
+}
