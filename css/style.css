@@ -89,6 +89,9 @@ html {
     border-radius: 0 0 10px 10px !important;
 }
 
+.res{
+    color: rgb(235, 235, 19);
+}
 .button button {
     background-color: transparent;
     padding: 8px;
