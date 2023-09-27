@@ -189,9 +189,7 @@ html {
     transform: scale(1.08);
 
 }
-#services h6{
-    margin-top: -120px;
-}
+
 .icon {
     width: 40px;
     height: 45px;
@@ -222,15 +220,7 @@ html {
     transform: translateY(-6px);
     opacity: .8;
 }
-.skill-head{
-    display: inline-block;
-    margin-top: -70px;
-    width: 100%;
-}
-.skill2-head{
-    display: flex;
-    gap: 15px;
-}
+
 .skill {
     display: flex;
     vertical-align: middle;
@@ -488,6 +478,16 @@ h3 {
         margin-left: 400px;
     }
     .skill-head{
+        width: fit-content;
+        display: flex;
+        gap: 8px;
+    }
+    .skill2-head{
+        width: fit-content;
+        display: flex;
+        gap: 8px;
+    }
+    .skill3-head{
         width: fit-content;
         display: flex;
         gap: 8px;
