@@ -79,6 +79,7 @@ html {
     border-radius: 20px;
     padding: 10px;
     transition: .4s ease;
+    margin-left: 6%;
 }
 
 .cards:hover {
@@ -478,7 +479,7 @@ h3 {
     .row2 h5 {
         width: 400px;
     }
-
+    
     .service p {
         width: 280px;
     }
