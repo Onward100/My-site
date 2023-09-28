@@ -13,31 +13,57 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+// function message() {
+//   (function(){
+//     emailjs.init('qxmxUsw-53qD2MAvg');
+//   })();
 
-function message(){
-  var Name = document.getElementById('name');
-  var email = document.getElementById('email');
-  var msg = document.getElementById('msg');
-  const success = document.getElementById('success');
-  const danger = document.getElementById('danger');
+//   var params = {
+//     sendername: document.querySelector('#sendername').value,
+//     to: document.querySelector('#to').value,
+//     message: document.querySelector('#message').value,
+//   };
 
-  if(Name.value === '' || email.value === '' || msg.value === ''){
-      danger.style.display = 'block';
+//   var serviceID = 'service_02yqzad';
+//   var templateID = 'template_u0erony';
+
+//   emailjs.send(serviceID, templateID, params).then(res =>{
+//     alert('Email sent successfully!')
+//   }).catch();
+// }
+
+// function message(){
+//   var Name = document.getElementById('name')
+//   var email = document.getElementById('email');
+//   var msg = document.getElementById('msg');
+//   const success = document.getElementById('success');
+//   const danger = document.getElementById('danger');
+
+function message() {
+  var params = {
+    from_name : document.getElementById('fullName').value,
+    email_id : document.getElementById('email_id').value,
+    message : document.getElementById('message').value,
   }
-  else{
-      setTimeout(() => {
-          Name.value = '';
-          email.value = '';
-          msg.value = '';
-      }, 2000);
+  emailjs.send('service_02yqzad', 'template_sxhhwp8', params).then(function (res){
+    alert('Email sent successfully!');
+  })
+  if(fullName.value === '' || email_id.value === '' || message.value === ''){
+    danger.style.display = 'block';
+}
+else{
+    setTimeout(() => {
+        fullName.value = ''; 
+        email_id.value = '';
+        message.value = '';
+    }, 2000);
 
-      success.style.display = 'block';
-  }
+    success.style.display = 'block';
+}
 
-
-  setTimeout(() => {
-      danger.style.display = 'none';
-      success.style.display = 'none';
-  }, 4000);
+setTimeout(() => {
+    danger.style.display = 'none';
+    success.style.display = 'none';
+}, 4000);
 
 }

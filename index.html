@@ -12,6 +12,13 @@
   <link rel="stylesheet" href="./css/aos.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/all.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("qxmxUsw-53qD2MAvg");
+    })();
+  </script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -156,7 +163,7 @@
           </div>
         </div>
         <br>
-        <div class="skill3-head" data-aos = 'fade-up'>
+        <div class="skill3-head" data-aos='fade-up'>
           <div class="skill-content">
             <div class="skill p-4">
               <div class="icon">
@@ -268,14 +275,14 @@
         <h3>Get in Touch</h3>
         <div class="name">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="Name" id="name">
+          <input type="text" placeholder="Name" id="fullName" required>
         </div>
         <div class="email">
           <i class="fas fa-envelope"></i>
-          <input type="text" placeholder="Email" id="email">
+          <input type="text" placeholder="Email" id="email_id" required>
         </div>
         <div class="message-box">
-          <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+          <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
         </div>
         <div class="btn-contact">
           <button id="send" onclick="message()">Send</button>
