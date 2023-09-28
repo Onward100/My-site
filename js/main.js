@@ -13,31 +13,6 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-// function message() {
-//   (function(){
-//     emailjs.init('qxmxUsw-53qD2MAvg');
-//   })();
-
-//   var params = {
-//     sendername: document.querySelector('#sendername').value,
-//     to: document.querySelector('#to').value,
-//     message: document.querySelector('#message').value,
-//   };
-
-//   var serviceID = 'service_02yqzad';
-//   var templateID = 'template_u0erony';
-
-//   emailjs.send(serviceID, templateID, params).then(res =>{
-//     alert('Email sent successfully!')
-//   }).catch();
-// }
-
-// function message(){
-//   var Name = document.getElementById('name')
-//   var email = document.getElementById('email');
-//   var msg = document.getElementById('msg');
-//   const success = document.getElementById('success');
-//   const danger = document.getElementById('danger');
 
 function message() {
   var params = {
@@ -45,25 +20,14 @@ function message() {
     email_id : document.getElementById('email_id').value,
     message : document.getElementById('message').value,
   }
-  emailjs.send('service_02yqzad', 'template_sxhhwp8', params).then(function (res){
-    alert('Email sent successfully!');
-  })
   if(fullName.value === '' || email_id.value === '' || message.value === ''){
-    danger.style.display = 'block';
-}
-else{
-    setTimeout(() => {
-        fullName.value = ''; 
-        email_id.value = '';
-        message.value = '';
-    }, 2000);
-
-    success.style.display = 'block';
-}
-
-setTimeout(() => {
-    danger.style.display = 'none';
-    success.style.display = 'none';
-}, 4000);
-
+    alert("Fields can't be empty");
+  }
+  else{
+    emailjs.send('service_02yqzad', 'template_sxhhwp8', params).then(function (res){
+      alert('Email sent successfully:', res);
+    }, function(error){
+      alert("Email sending failed:", error);
+    });
+  }
 }
