@@ -1,5 +1,5 @@
 body {
-    font-family: 'Bai Jamjuree, poppins';
+    font-family: 'roboto, poppins';
     background-color: #033f47;
     color: #b6cbce;
 }
@@ -12,7 +12,9 @@ h5,
 h6 {
     color: white;
 }
-
+.about-text{
+    font-size: 20px;
+}
 html {
     scroll-behavior: smooth;
 }
