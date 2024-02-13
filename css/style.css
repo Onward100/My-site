@@ -41,7 +41,6 @@ html {
 .navbar {
     background-color: rgb(15, 113, 126);
 }
-
 .navbar .nav-link {
     text-transform: uppercase;
     color: white !important;
@@ -343,6 +342,7 @@ h3 {
     font-size: 18px;
     background-color: rgb(15, 113, 126);
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .message-box textarea::placeholder {
@@ -350,26 +350,14 @@ h3 {
     font-weight: 500;
 }
 
-.btn-contact {
-    width: 100%;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: .2s ease;
-}
-
-.btn-contact button {
-    width: 50%;
-    padding: 10px;
-    font-size: 20px;
-    color: #fff;
+.btn-contact a {
+    text-decoration: none;
+    color: white;
     font-weight: bold;
-    background-color: transparent;
+    font-size: 19px;
     border: 2px solid rgb(209, 209, 38);
-    outline: none;
+    padding: 15px 60px;
     border-radius: 40px;
-    cursor: pointer;
-    transition: .2s ease;
-    margin: auto 25%;
 }
 
 .btn-contact button:hover {
